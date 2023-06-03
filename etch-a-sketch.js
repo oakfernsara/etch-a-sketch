@@ -1,9 +1,15 @@
 const container = document.querySelector('#container');
 
-const gridSize = 16*16;
+const gridSize = 16;
 
 for (let x = 0; x < gridSize; x++) {
-    const square = document.createElement('div');
-    square.className = "grid";
-    container.appendChild(square)
+    const row = document.createElement('div');
+    row.className = "row";
+    container.appendChild(row);
+
+    for (let y = 0; y < gridSize; y++) { 
+        const box = document.createElement('div');
+        box.className = "box";
+        row.appendChild(box);
+    }
 }

@@ -28,9 +28,6 @@ function gridPainter(gridSize) {
                 box.style.backgroundColor = 'red';
             })
     
-            box.addEventListener('mouseout', () => {
-                box.style.backgroundColor = 'white';
-            })
             row.appendChild(box);
         }
     }
